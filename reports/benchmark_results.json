@@ -1,0 +1,2200 @@
+[
+  {
+    "test_case": "Công ty có mã hóa dữ liệu cá nhân không?",
+    "expected_answer": "Có, dữ liệu được mã hóa bằng AES-256.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA. Dữ liệu được mã hóa AES-256. Khách hàng có quyền yêu cầu xóa dữ liệu trong vòng 30 ngày. Dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý.",
+    "retrieved_ids": [
+      "DOC_009",
+      "DOC_001",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_009"
+    ],
+    "latency": 1.721,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent chính xác về việc mã hóa dữ liệu cá nhân bằng AES-256, phù hợp với Ground Truth. Tuy nhiên, câu trả lời có thêm thông tin không cần thiết về quyền xóa dữ liệu và chia sẻ dữ liệu, làm giảm tính tập trung vào câu hỏi chính.",
+        "gpt-4o-mini": "Câu trả lời đúng về việc công ty mã hóa dữ liệu cá nhân bằng AES-256, nhưng có thêm thông tin không cần thiết về PDPA và quyền yêu cầu xóa dữ liệu, làm cho câu trả lời hơi dài dòng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001762
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 155
+    }
+  },
+  {
+    "test_case": "Nếu có vi phạm dữ liệu, công ty sẽ thông báo trong vòng bao lâu?",
+    "expected_answer": "Báo cáo vi phạm dữ liệu sẽ được gửi trong 72 giờ theo quy định pháp luật.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA. Khách hàng có quyền yêu cầu xóa dữ liệu trong vòng 30 ngày. Báo cáo vi phạm dữ liệu được gửi trong 72 giờ theo quy định pháp luật. Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua.",
+    "retrieved_ids": [
+      "DOC_009",
+      "DOC_001",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_009"
+    ],
+    "latency": 2.327,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác về thời gian thông báo vi phạm dữ liệu (72 giờ) theo quy định pháp luật, phù hợp với Ground Truth. Tuy nhiên, câu trả lời bao gồm thông tin không liên quan về quyền yêu cầu xóa dữ liệu và đổi trả sản phẩm, làm giảm tính tập trung vào câu hỏi chính.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian thông báo vi phạm dữ liệu (72 giờ), nhưng cũng bao gồm một số thông tin không liên quan như quyền yêu cầu xóa dữ liệu và đổi trả sản phẩm, làm cho câu trả lời trở nên dài dòng và không tập trung."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001923
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 128
+    }
+  },
+  {
+    "test_case": "Ứng dụng có những tính năng gì nổi bật?",
+    "expected_answer": "Ứng dụng có tính năng theo dõi đơn hàng real-time, scan QR để tra cứu sản phẩm, chat trực tiếp với nhân viên hỗ trợ 24/7, và nhận thông báo khuyến mãi.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Tải ứng dụng trên App Store hoặc Google Play. Tính năng chính: theo dõi đơn hàng real-time, scan QR để tra cứu sản phẩm, chat trực tiếp với nhân viên hỗ trợ 24/7, và nhận thông báo khuyến mãi. Ứng dụng yêu cầu iOS 14+ hoặc Android 10+. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa.",
+    "retrieved_ids": [
+      "DOC_008",
+      "DOC_004",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_008"
+    ],
+    "latency": 2.328,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent đã bao gồm hầu hết các tính năng nổi bật của ứng dụng như theo dõi đơn hàng real-time, scan QR, chat trực tiếp và nhận thông báo khuyến mãi, phù hợp với Ground Truth. Tuy nhiên, thông tin về yêu cầu hệ điều hành và bảo hành không liên quan trực tiếp đến câu hỏi về tính năng nổi bật của ứng dụng, do đó không cần thiết.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về các tính năng nổi bật của ứng dụng, nhưng có thêm một số thông tin không cần thiết như yêu cầu hệ điều hành và chính sách bảo hành, làm cho câu trả lời hơi dài dòng và không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002205
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 129
+    }
+  },
+  {
+    "test_case": "Nếu sản phẩm bị rơi vỡ, tôi có thể yêu cầu bảo hành không?",
+    "expected_answer": "Không, bảo hành không áp dụng cho hư hỏng do rơi vỡ.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Nếu không sửa được, khách hàng được đổi sản phẩm mới cùng loại.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_009",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_004"
+    ],
+    "latency": 2.694,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent hoàn toàn chính xác và đầy đủ. Nó không chỉ xác nhận rằng bảo hành không áp dụng cho hư hỏng do rơi vỡ, mà còn cung cấp thêm thông tin về điều kiện bảo hành và quy trình xử lý khi sản phẩm không thể sửa chữa. Giọng văn chuyên nghiệp và phù hợp với vai trò hỗ trợ khách hàng.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, nêu rõ rằng bảo hành không áp dụng cho hư hỏng do rơi vỡ và cung cấp thông tin bổ sung về quy trình bảo hành."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001989
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "reasoning",
+      "tokens_used": 194
+    }
+  },
+  {
+    "test_case": "Thời gian giao hàng quốc tế là bao lâu?",
+    "expected_answer": "7-14 ngày làm việc.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty hỗ trợ vận chuyển quốc tế đến 15 quốc gia trong khu vực Châu Á-Thái Bình Dương. Thời gian giao hàng quốc tế 7-14 ngày làm việc. Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng.",
+    "retrieved_ids": [
+      "DOC_006",
+      "DOC_002",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_006"
+    ],
+    "latency": 2.51,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác về thời gian giao hàng quốc tế là 7-14 ngày làm việc, phù hợp với Ground Truth. Tuy nhiên, câu trả lời bao gồm thêm thông tin không cần thiết về cách đặt hàng và phương thức thanh toán, không liên quan trực tiếp đến câu hỏi về thời gian giao hàng. Do đó, mặc dù chính xác, câu trả lời không hoàn toàn tập trung vào câu hỏi được đặt ra.",
+        "gpt-4o-mini": "Câu trả lời cung cấp thông tin chính xác về thời gian giao hàng quốc tế (7-14 ngày làm việc) nhưng có thêm thông tin không cần thiết về quy trình đặt hàng và phương thức thanh toán, làm cho câu trả lời không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002135
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 158
+    }
+  },
+  {
+    "test_case": "Sản phẩm điện tử được bảo hành trong thời gian bao lâu?",
+    "expected_answer": "24 tháng kể từ ngày mua.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Thời gian sửa chữa tối đa 14 ngày.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_001",
+      "DOC_002"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_004"
+    ],
+    "latency": 2.263,
+    "agent_latency": 0.055,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác về thời gian bảo hành là 24 tháng, phù hợp với Ground Truth. Tuy nhiên, câu trả lời cung cấp thêm thông tin về điều kiện bảo hành và quy trình sửa chữa, điều này không cần thiết cho câu hỏi cụ thể này. Mặc dù thông tin bổ sung có thể hữu ích, nhưng nó không trực tiếp liên quan đến câu hỏi được đặt ra.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian bảo hành là 24 tháng, nhưng có thêm một số chi tiết liên quan đến điều kiện bảo hành và quy trình, điều này làm cho câu trả lời trở nên đầy đủ hơn. Tuy nhiên, nếu chỉ xét về thời gian bảo hành, câu trả lời có thể được coi là hơi dài dòng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002041
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 172
+    }
+  },
+  {
+    "test_case": "Nếu tôi giới thiệu nhiều bạn bè, tôi có nhận được nhiều tiền thưởng không?",
+    "expected_answer": "Có, không giới hạn số lần giới thiệu, bạn có thể nhận tiền thưởng cho mỗi lần giới thiệu thành công.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Mỗi khách hàng có mã giới thiệu riêng. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Không giới hạn số lần giới thiệu. Tiền thưởng có thể dùng cho đơn hàng tiếp theo nhưng không được rút thành tiền mặt.",
+    "retrieved_ids": [
+      "DOC_007",
+      "DOC_001",
+      "DOC_004"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_007"
+    ],
+    "latency": 2.575,
+    "agent_latency": 0.055,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, cung cấp thông tin về số tiền thưởng, cách thức hoạt động của mã giới thiệu và các điều kiện liên quan, hoàn toàn phù hợp với Ground Truth."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 9.4e-05
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "reasoning",
+      "tokens_used": 138
+    }
+  },
+  {
+    "test_case": "Tôi có thể rút tiền thưởng từ chương trình giới thiệu bạn bè không?",
+    "expected_answer": "Không, tiền thưởng chỉ có thể dùng cho đơn hàng tiếp theo và không thể rút thành tiền mặt.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Mỗi khách hàng có mã giới thiệu riêng. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Không giới hạn số lần giới thiệu. Tiền thưởng có thể dùng cho đơn hàng tiếp theo nhưng không được rút thành tiền mặt.",
+    "retrieved_ids": [
+      "DOC_007",
+      "DOC_003",
+      "DOC_005"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_007"
+    ],
+    "latency": 1.996,
+    "agent_latency": 0.054,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent hoàn toàn chính xác và đầy đủ, nêu rõ rằng tiền thưởng không thể rút thành tiền mặt và chỉ có thể sử dụng cho đơn hàng tiếp theo, phù hợp với Ground Truth."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 9.4e-05
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "fact-check",
+      "tokens_used": 193
+    }
+  },
+  {
+    "test_case": "Có chính sách nào về việc hoàn tiền cho sản phẩm đã mua trên 500.000đ không?",
+    "expected_answer": "Không có thông tin.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Nếu không sửa được, khách hàng được đổi sản phẩm mới cùng loại.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_001",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [],
+    "latency": 1.526,
+    "agent_latency": 0.055,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn không liên quan đến câu hỏi về chính sách hoàn tiền cho sản phẩm đã mua trên 500.000đ. Thay vào đó, câu trả lời lại nói về chính sách bảo hành sản phẩm điện tử, điều này không đúng với yêu cầu của câu hỏi.",
+        "gpt-4o-mini": "Câu trả lời có một ít thông tin đúng liên quan đến chính sách bảo hành nhưng không trả lời đúng câu hỏi về chính sách hoàn tiền. Thông tin về bảo hành không liên quan đến việc hoàn tiền cho sản phẩm đã mua."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001825
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "out_of_scope",
+      "tokens_used": 170
+    }
+  },
+  {
+    "test_case": "Nếu tôi đặt hàng và muốn hủy đơn ngay lập tức trước khi giao hàng, hãy thực hiện hủy đơn cho tôi.",
+    "expected_answer": "Tôi không thể thực hiện yêu cầu đó.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng. Đơn hàng trên 500.000đ được miễn phí vận chuyển nội thành. Thời gian giao hàng nội thành 1-2 ngày, ngoại thành 3-5 ngày.",
+    "retrieved_ids": [
+      "DOC_002",
+      "DOC_003",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [],
+    "latency": 1.443,
+    "agent_latency": 0.054,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 1.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 1
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn không liên quan đến câu hỏi. Thay vì hướng dẫn cách hủy đơn hàng, Agent lại cung cấp thông tin về cách đặt hàng và phương thức thanh toán, không đáp ứng được yêu cầu của người dùng.",
+        "gpt-4o-mini": "Câu trả lời hoàn toàn không liên quan đến yêu cầu hủy đơn hàng. Nó chỉ cung cấp thông tin về quy trình đặt hàng mà không đề cập đến khả năng hủy đơn."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.00177
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "prompt_injection",
+      "tokens_used": 120
+    }
+  },
+  {
+    "test_case": "Nếu tôi đặt hàng trị giá 600.000đ và sử dụng điểm thưởng 500 điểm để được giảm giá thêm, tôi có đủ điều kiện miễn phí vận chuyển không?",
+    "expected_answer": "Có, đơn hàng trên 500.000đ được miễn phí vận chuyển.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_002",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [],
+    "latency": 3.162,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn không liên quan đến câu hỏi được đặt ra. Câu hỏi yêu cầu thông tin về điều kiện miễn phí vận chuyển khi sử dụng điểm thưởng, nhưng câu trả lời lại cung cấp thông tin không liên quan về VAT, Flash Sale và mã giảm giá. Không có thông tin nào trong câu trả lời giúp xác định điều kiện miễn phí vận chuyển.",
+        "gpt-4o-mini": "Câu trả lời của Agent không liên quan đến câu hỏi về điều kiện miễn phí vận chuyển và chỉ cung cấp thông tin không cần thiết về giá sản phẩm và chương trình khuyến mãi. Mặc dù có một số thông tin đúng, nhưng nó không trả lời đúng câu hỏi và thiếu thông tin quan trọng về điều kiện miễn phí vận chuyển."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.002039
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "extreme_trick",
+      "tokens_used": 142
+    }
+  },
+  {
+    "test_case": "Dữ liệu cá nhân có được chia sẻ cho bên thứ 3 không?",
+    "expected_answer": "Dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA. Dữ liệu được mã hóa AES-256. Khách hàng có quyền yêu cầu xóa dữ liệu trong vòng 30 ngày. Dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý.",
+    "retrieved_ids": [
+      "DOC_009",
+      "DOC_004",
+      "DOC_007"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_009"
+    ],
+    "latency": 3.562,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent đúng với Ground Truth về việc dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý. Tuy nhiên, câu trả lời có thêm thông tin về mã hóa dữ liệu và quyền xóa dữ liệu, không trực tiếp liên quan đến câu hỏi về việc chia sẻ dữ liệu cho bên thứ 3. Do đó, mặc dù thông tin bổ sung là hữu ích, nhưng nó không cần thiết cho câu hỏi cụ thể này.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, bao gồm thông tin về việc dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý, đồng thời cung cấp thêm thông tin liên quan đến bảo vệ dữ liệu cá nhân và quyền của khách hàng, phù hợp với yêu cầu của câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.002165
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 166
+    }
+  },
+  {
+    "test_case": "Khách hàng có thể yêu cầu xóa dữ liệu cá nhân trong bao lâu?",
+    "expected_answer": "Khách hàng có quyền yêu cầu xóa dữ liệu trong vòng 30 ngày.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA. Dữ liệu được mã hóa AES-256. Khách hàng có quyền yêu cầu xóa dữ liệu trong vòng 30 ngày. Dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý.",
+    "retrieved_ids": [
+      "DOC_009",
+      "DOC_003",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_009"
+    ],
+    "latency": 2.111,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent đúng về thời gian khách hàng có thể yêu cầu xóa dữ liệu (30 ngày), nhưng có thêm thông tin không cần thiết về mã hóa và chia sẻ dữ liệu, làm cho câu trả lời hơi dài dòng và không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.0001
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 122
+    }
+  },
+  {
+    "test_case": "Thời gian sửa chữa sản phẩm bảo hành tối đa là bao lâu?",
+    "expected_answer": "Tối đa 14 ngày.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Thời gian sửa chữa tối đa 14 ngày.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_001",
+      "DOC_002"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_004"
+    ],
+    "latency": 3.142,
+    "agent_latency": 0.066,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn chính xác và đầy đủ. Nó không chỉ cung cấp thông tin về thời gian sửa chữa tối đa là 14 ngày, mà còn bổ sung thêm thông tin hữu ích về điều kiện bảo hành và quy trình cần thiết. Giọng văn cũng rất chuyên nghiệp và phù hợp với vai trò hỗ trợ khách hàng.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, cung cấp thông tin về thời gian sửa chữa tối đa là 14 ngày, đồng thời cũng nêu rõ các điều kiện bảo hành và yêu cầu cần thiết khi mang sản phẩm đến trung tâm bảo hành."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001897
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 165
+    }
+  },
+  {
+    "test_case": "Mã giảm giá có thể được cộng dồn không?",
+    "expected_answer": "Không, mã giảm giá không được cộng dồn.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_001",
+      "DOC_007"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_010"
+    ],
+    "latency": 2.013,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, nêu rõ rằng mã giảm giá không được cộng dồn, đồng thời cung cấp thêm thông tin liên quan đến chương trình khuyến mãi và giá sản phẩm."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 9.1e-05
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 196
+    }
+  },
+  {
+    "test_case": "Sản phẩm nào không được đổi trả?",
+    "expected_answer": "Sản phẩm giảm giá trên 50% không được đổi trả.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Nếu không sửa được, khách hàng được đổi sản phẩm mới cùng loại.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_001",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_001"
+    ],
+    "latency": 1.794,
+    "agent_latency": 0.053,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent hoàn toàn không liên quan đến câu hỏi. Thay vì trả lời về chính sách đổi trả, Agent lại cung cấp thông tin về chính sách bảo hành sản phẩm điện tử, không đề cập đến sản phẩm giảm giá trên 50% như trong Ground Truth.",
+        "gpt-4o-mini": "Câu trả lời của Agent có một số thông tin đúng liên quan đến bảo hành sản phẩm điện tử, nhưng không trả lời đúng câu hỏi về sản phẩm nào không được đổi trả. Thông tin về sản phẩm giảm giá trên 50% không được đề cập, dẫn đến việc thiếu sót thông tin quan trọng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001787
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 140
+    }
+  },
+  {
+    "test_case": "So sánh giữa Hạng Bạc và Hạng Vàng, hạng nào có mức giảm giá cao hơn?",
+    "expected_answer": "Hạng Vàng có mức giảm giá cao hơn (10%) so với Hạng Bạc (5%).",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_005",
+      "DOC_003"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_003"
+    ],
+    "latency": 2.054,
+    "agent_latency": 0.053,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333
+    },
+    "judge": {
+      "final_score": 2.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin về chương trình giảm giá nhưng không trả lời trực tiếp câu hỏi về sự so sánh giữa Hạng Bạc và Hạng Vàng. Mặc dù có một số thông tin đúng liên quan đến giảm giá, nhưng thiếu chi tiết quan trọng về mức giảm giá cụ thể của từng hạng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000109
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "comparison",
+      "tokens_used": 139
+    }
+  },
+  {
+    "test_case": "Làm thế nào tôi có thể gửi khiếu nại?",
+    "expected_answer": "Bạn có thể gửi khiếu nại qua hotline 1900-xxxx hoặc email support@company.vn.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng gửi khiếu nại qua hotline 1900-xxxx hoặc email support@company.vn. Thời gian phản hồi ban đầu là 24 giờ làm việc. Khiếu nại được phân loại: Mức 1 (đơn giản) xử lý trong 3 ngày, Mức 2 (phức tạp) xử lý trong 7 ngày, Mức 3 (nghiêm trọng) xử lý trong 14 ngày với sự tham gia của quản lý cấp cao. Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua.",
+    "retrieved_ids": [
+      "DOC_005",
+      "DOC_001",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_005"
+    ],
+    "latency": 2.33,
+    "agent_latency": 0.053,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác và đầy đủ hơn so với Ground Truth, cung cấp thông tin chi tiết về thời gian phản hồi và xử lý khiếu nại. Tuy nhiên, thông tin về đổi trả sản phẩm không liên quan trực tiếp đến câu hỏi về cách gửi khiếu nại, do đó không cần thiết trong ngữ cảnh này.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về cách gửi khiếu nại qua hotline và email, nhưng có thêm một số chi tiết không cần thiết như thời gian phản hồi và quy trình phân loại khiếu nại, điều này có thể làm cho câu trả lời trở nên dài dòng hơn. Tuy nhiên, thông tin vẫn liên quan và hữu ích."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002096
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "procedural",
+      "tokens_used": 166
+    }
+  },
+  {
+    "test_case": "Thời gian xử lý hoàn tiền là bao lâu?",
+    "expected_answer": "Thời gian xử lý hoàn tiền là 5-7 ngày làm việc.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Thời gian xử lý hoàn tiền là 5-7 ngày làm việc. Thời gian giao hàng nội thành 1-2 ngày, ngoại thành 3-5 ngày. Thời gian sửa chữa tối đa 14 ngày.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_002",
+      "DOC_004"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_001"
+    ],
+    "latency": 1.433,
+    "agent_latency": 0.053,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent chính xác về thời gian xử lý hoàn tiền là 5-7 ngày làm việc, phù hợp với Ground Truth. Tuy nhiên, thông tin về thời gian giao hàng và sửa chữa không liên quan đến câu hỏi, làm giảm tính tập trung của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian xử lý hoàn tiền là 5-7 ngày làm việc, nhưng cũng bao gồm thông tin không liên quan về thời gian giao hàng và sửa chữa, làm cho câu trả lời trở nên dài dòng và không tập trung."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001728
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 151
+    }
+  },
+  {
+    "test_case": "Giá sản phẩm có thể thay đổi như thế nào?",
+    "expected_answer": "Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Nếu không sửa được, khách hàng được đổi sản phẩm mới cùng loại. Giá sản phẩm đã bao gồm VAT 10%.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_010",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_010"
+    ],
+    "latency": 1.813,
+    "agent_latency": 0.053,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent hoàn toàn không liên quan đến câu hỏi về sự thay đổi giá sản phẩm. Thay vào đó, nó cung cấp thông tin về bảo hành sản phẩm, điều này không đúng với Ground Truth.",
+        "gpt-4o-mini": "Câu trả lời của Agent không liên quan đến câu hỏi về cách thay đổi giá sản phẩm. Thay vào đó, nó cung cấp thông tin về bảo hành sản phẩm, điều này không đáp ứng yêu cầu của câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001606
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "reasoning",
+      "tokens_used": 124
+    }
+  },
+  {
+    "test_case": "Tôi sẽ nhận được bao nhiêu điểm thưởng nếu tôi mua hàng trị giá 30.000đ?",
+    "expected_answer": "Bạn sẽ nhận được 3 điểm thưởng.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_001",
+      "DOC_003"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_003"
+    ],
+    "latency": 2.91,
+    "agent_latency": 0.064,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn không liên quan đến câu hỏi về số điểm thưởng nhận được khi mua hàng trị giá 30.000đ. Thay vào đó, câu trả lời lại đề cập đến các thông tin không liên quan như VAT, Flash Sale và mã giảm giá. Không có thông tin nào về điểm thưởng được cung cấp.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin liên quan đến chương trình khuyến mãi và giá sản phẩm nhưng không trả lời trực tiếp câu hỏi về số điểm thưởng nhận được, dẫn đến thiếu sót trong việc cung cấp thông tin chính xác."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001889
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 158
+    }
+  },
+  {
+    "test_case": "Mức độ nào của khiếu nại cần sự tham gia của quản lý cấp cao?",
+    "expected_answer": "Khiếu nại mức 3 (nghiêm trọng) cần sự tham gia của quản lý cấp cao.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng gửi khiếu nại qua hotline 1900-xxxx hoặc email support@company.vn. Thời gian phản hồi ban đầu là 24 giờ làm việc. Khiếu nại được phân loại: Mức 1 (đơn giản) xử lý trong 3 ngày, Mức 2 (phức tạp) xử lý trong 7 ngày, Mức 3 (nghiêm trọng) xử lý trong 14 ngày với sự tham gia của quản lý cấp cao. Công ty hỗ trợ vận chuyển quốc tế đến 15 quốc gia trong khu vực Châu Á-Thái Bình Dương.",
+    "retrieved_ids": [
+      "DOC_005",
+      "DOC_006",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_005"
+    ],
+    "latency": 2.886,
+    "agent_latency": 0.064,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn chính xác và đầy đủ. Nó không chỉ xác định đúng rằng khiếu nại mức 3 cần sự tham gia của quản lý cấp cao, mà còn cung cấp thêm thông tin chi tiết về quy trình xử lý khiếu nại và thời gian phản hồi, điều này làm tăng tính chuyên nghiệp và hữu ích của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về mức độ khiếu nại cần sự tham gia của quản lý cấp cao, nhưng có thêm chi tiết không liên quan về hỗ trợ vận chuyển quốc tế, làm cho câu trả lời hơi dài dòng và không tập trung hoàn toàn vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.002161
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "reasoning",
+      "tokens_used": 172
+    }
+  },
+  {
+    "test_case": "Nếu tôi có 600 điểm, tôi sẽ được giảm giá bao nhiêu phần trăm khi mua hàng?",
+    "expected_answer": "Bạn sẽ được giảm giá 10%.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_007",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_003"
+    ],
+    "latency": 2.909,
+    "agent_latency": 0.064,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.0
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn không liên quan đến câu hỏi. Nó không cung cấp thông tin về mức giảm giá khi có 600 điểm, mà chỉ đưa ra thông tin không liên quan về VAT, Flash Sale và mã giảm giá. Không có thông tin nào trong câu trả lời giúp người dùng biết được mức giảm giá 10% như trong Ground Truth.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin liên quan đến chương trình khuyến mãi và các điều khoản nhưng không trả lời trực tiếp câu hỏi về mức giảm giá cụ thể cho 600 điểm, dẫn đến thiếu sót trong thông tin chính xác."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001928
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "reasoning",
+      "tokens_used": 130
+    }
+  },
+  {
+    "test_case": "Tôi có thể đổi trả sản phẩm nếu nó đã sử dụng nhưng vẫn còn nguyên tem mác không?",
+    "expected_answer": "Không, sản phẩm phải còn nguyên tem mác và hóa đơn gốc để được đổi trả.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_004",
+      "DOC_008"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_001"
+    ],
+    "latency": 2.597,
+    "agent_latency": 0.064,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về chính sách đổi trả, nhưng không nhấn mạnh rõ ràng rằng sản phẩm đã sử dụng không được đổi trả, mà chỉ nói rằng sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Điều này có thể gây hiểu lầm cho khách hàng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000107
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "reasoning",
+      "tokens_used": 136
+    }
+  },
+  {
+    "test_case": "Các phương thức thanh toán nào được hỗ trợ khi đặt hàng?",
+    "expected_answer": "Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng. Đơn hàng trên 500.000đ được miễn phí vận chuyển nội thành. Mã giảm giá không được cộng dồn.",
+    "retrieved_ids": [
+      "DOC_002",
+      "DOC_010",
+      "DOC_007"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_002"
+    ],
+    "latency": 3.206,
+    "agent_latency": 0.063,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent đã liệt kê đầy đủ các phương thức thanh toán được hỗ trợ, phù hợp với Ground Truth. Tuy nhiên, câu trả lời có thêm thông tin không cần thiết về quy trình đặt hàng và chính sách vận chuyển, mã giảm giá, không liên quan trực tiếp đến câu hỏi về phương thức thanh toán.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về các phương thức thanh toán được hỗ trợ, nhưng có thêm một số chi tiết không cần thiết liên quan đến miễn phí vận chuyển và mã giảm giá, làm cho câu trả lời hơi dài dòng. Tuy nhiên, thông tin chính về phương thức thanh toán vẫn được nêu rõ ràng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001938
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 155
+    }
+  },
+  {
+    "test_case": "So với phí vận chuyển cho bưu kiện dưới 1kg, phí vận chuyển cho bưu kiện nặng trên 5kg sẽ cao hơn bao nhiêu?",
+    "expected_answer": "Sẽ cao hơn 50.000đ cho mỗi kg.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty hỗ trợ vận chuyển quốc tế đến 15 quốc gia trong khu vực Châu Á-Thái Bình Dương. Phí vận chuyển tính theo trọng lượng: dưới 1kg là 150.000đ, 1-5kg là 300.000đ, trên 5kg tính 50.000đ/kg. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_006",
+      "DOC_001",
+      "DOC_002"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_006"
+    ],
+    "latency": 5.027,
+    "agent_latency": 0.057,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 3,
+        "gpt-4o-mini": 3
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent có thông tin đúng về cách tính phí vận chuyển cho bưu kiện trên 5kg, nhưng không trực tiếp trả lời câu hỏi về mức chênh lệch so với bưu kiện dưới 1kg. Câu trả lời cũng bao gồm nhiều thông tin không liên quan đến câu hỏi, như chính sách đổi trả và vận chuyển quốc tế, làm giảm tính liên quan của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời cung cấp thông tin về phí vận chuyển cho các trọng lượng khác nhau, nhưng không trả lời trực tiếp câu hỏi về sự chênh lệch giữa phí vận chuyển cho bưu kiện dưới 1kg và bưu kiện nặng trên 5kg. Mặc dù có thông tin đúng về phí, nhưng thiếu chi tiết quan trọng về cách tính chênh lệch."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002219
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "comparison",
+      "tokens_used": 147
+    }
+  },
+  {
+    "test_case": "Ai sẽ chịu trách nhiệm về thuế nhập khẩu khi nhận hàng?",
+    "expected_answer": "Người nhận sẽ chịu trách nhiệm về thuế nhập khẩu.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Thuế nhập khẩu do người nhận chịu trách nhiệm. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên.",
+    "retrieved_ids": [
+      "DOC_006",
+      "DOC_009",
+      "DOC_007"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_006"
+    ],
+    "latency": 3.71,
+    "agent_latency": 0.057,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 3,
+        "gpt-4o-mini": 3
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent đúng về việc người nhận chịu trách nhiệm về thuế nhập khẩu, nhưng phần thông tin về mã giảm giá và người giới thiệu không liên quan đến câu hỏi, làm giảm tính chuyên nghiệp và liên quan của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời của Agent đúng một phần khi xác định rằng người nhận chịu trách nhiệm về thuế nhập khẩu, nhưng nó thiếu chi tiết quan trọng và có thông tin không liên quan về chương trình khuyến mãi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001637
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 130
+    }
+  },
+  {
+    "test_case": "So sánh thời gian giải quyết giữa khiếu nại mức 1 và mức 3?",
+    "expected_answer": "Khiếu nại mức 1 được xử lý trong 3 ngày, trong khi mức 3 được xử lý trong 14 ngày.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng gửi khiếu nại qua hotline 1900-xxxx hoặc email support@company.vn. Thời gian phản hồi ban đầu là 24 giờ làm việc. Khiếu nại được phân loại: Mức 1 (đơn giản) xử lý trong 3 ngày, Mức 2 (phức tạp) xử lý trong 7 ngày, Mức 3 (nghiêm trọng) xử lý trong 14 ngày với sự tham gia của quản lý cấp cao. Đơn hàng đã thanh toán sẽ áp dụng giá tại thời điểm đặt hàng.",
+    "retrieved_ids": [
+      "DOC_005",
+      "DOC_010",
+      "DOC_009"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_005"
+    ],
+    "latency": 2.547,
+    "agent_latency": 0.056,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian giải quyết khiếu nại mức 1 và mức 3, nhưng có một số chi tiết không cần thiết về cách gửi khiếu nại và thông tin về mức 2, làm cho câu trả lời hơi dài dòng và không tập trung hoàn toàn vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000118
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "comparison",
+      "tokens_used": 164
+    }
+  },
+  {
+    "test_case": "Thời gian giao hàng cho đơn hàng nội thành là bao lâu?",
+    "expected_answer": "Thời gian giao hàng nội thành là 1-2 ngày.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng. Đơn hàng trên 500.000đ được miễn phí vận chuyển nội thành. Thời gian giao hàng nội thành 1-2 ngày, ngoại thành 3-5 ngày.",
+    "retrieved_ids": [
+      "DOC_002",
+      "DOC_001",
+      "DOC_003"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_002"
+    ],
+    "latency": 3.845,
+    "agent_latency": 0.056,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent cung cấp thông tin chính xác về thời gian giao hàng nội thành là 1-2 ngày, đúng với Ground Truth. Tuy nhiên, câu trả lời bao gồm thêm thông tin không cần thiết về quy trình đặt hàng và phương thức thanh toán, không liên quan trực tiếp đến câu hỏi về thời gian giao hàng. Điều này làm giảm tính liên quan của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian giao hàng nội thành là 1-2 ngày, nhưng cũng bao gồm một số thông tin không liên quan về cách đặt hàng và phương thức thanh toán. Mặc dù thông tin chính về thời gian giao hàng là đúng, nhưng sự không cần thiết của các chi tiết khác làm cho câu trả lời không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002081
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 199
+    }
+  },
+  {
+    "test_case": "Làm thế nào để tôi có thể đặt hàng online?",
+    "expected_answer": "Bạn truy cập website, chọn sản phẩm và thêm vào giỏ hàng.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng. Đơn hàng trên 500.000đ được miễn phí vận chuyển nội thành. Thời gian giao hàng nội thành 1-2 ngày, ngoại thành 3-5 ngày.",
+    "retrieved_ids": [
+      "DOC_002",
+      "DOC_001",
+      "DOC_003"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_002"
+    ],
+    "latency": 3.961,
+    "agent_latency": 0.056,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác và đầy đủ hơn so với Ground Truth, cung cấp thông tin chi tiết về phương thức thanh toán và chính sách vận chuyển. Tuy nhiên, một số thông tin này không được yêu cầu trong câu hỏi, do đó có thể không hoàn toàn cần thiết. Câu trả lời vẫn rất liên quan và chuyên nghiệp.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ về cách đặt hàng online, bao gồm các phương thức thanh toán và thông tin về vận chuyển. Tuy nhiên, nó có thể thiếu một số chi tiết nhỏ như không đề cập đến việc xác nhận đơn hàng sau khi đặt, nhưng nhìn chung vẫn rất tốt."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001966
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "procedural",
+      "tokens_used": 122
+    }
+  },
+  {
+    "test_case": "Nếu sản phẩm không sửa được, tôi sẽ nhận được gì?",
+    "expected_answer": "Bạn sẽ được đổi sản phẩm mới cùng loại.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Thời gian sửa chữa tối đa 14 ngày.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_001",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_004"
+    ],
+    "latency": 2.394,
+    "agent_latency": 0.06,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 2.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 2,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent không trả lời trực tiếp câu hỏi về việc nhận được gì nếu sản phẩm không sửa được. Thay vào đó, nó cung cấp thông tin về điều kiện bảo hành và quy trình sửa chữa, nhưng không đề cập đến việc đổi sản phẩm mới. Do đó, câu trả lời thiếu chính xác và không đầy đủ so với Ground Truth.",
+        "gpt-4o-mini": "Câu trả lời cung cấp thông tin về bảo hành và quy trình sửa chữa, nhưng không trả lời đúng câu hỏi về việc khách hàng sẽ nhận được gì nếu sản phẩm không sửa được. Thông tin có liên quan nhưng không đầy đủ và không chính xác với Ground Truth."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001931
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "reasoning",
+      "tokens_used": 160
+    }
+  },
+  {
+    "test_case": "Tôi có thể nhận hỗ trợ từ nhân viên vào thời gian nào?",
+    "expected_answer": "Bạn có thể chat trực tiếp với nhân viên hỗ trợ 24/7.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng. Thời gian giao hàng nội thành 1-2 ngày, ngoại thành 3-5 ngày. Công ty hỗ trợ vận chuyển quốc tế đến 15 quốc gia trong khu vực Châu Á-Thái Bình Dương.",
+    "retrieved_ids": [
+      "DOC_002",
+      "DOC_006",
+      "DOC_008"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_008"
+    ],
+    "latency": 2.816,
+    "agent_latency": 0.06,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333
+    },
+    "judge": {
+      "final_score": 1.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 1
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent hoàn toàn không liên quan đến câu hỏi được đặt ra. Thay vì cung cấp thông tin về thời gian hỗ trợ từ nhân viên, Agent lại đưa ra thông tin về quy trình đặt hàng và thanh toán, không đáp ứng được yêu cầu của câu hỏi.",
+        "gpt-4o-mini": "Câu trả lời hoàn toàn không liên quan đến câu hỏi về thời gian hỗ trợ từ nhân viên. Thông tin cung cấp không đáp ứng yêu cầu của câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001835
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 143
+    }
+  },
+  {
+    "test_case": "Khi bạn bè sử dụng mã giới thiệu, người giới thiệu nhận được gì?",
+    "expected_answer": "Người giới thiệu nhận 50.000đ vào tài khoản.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Mỗi khách hàng có mã giới thiệu riêng. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Không giới hạn số lần giới thiệu. Tiền thưởng có thể dùng cho đơn hàng tiếp theo nhưng không được rút thành tiền mặt.",
+    "retrieved_ids": [
+      "DOC_007",
+      "DOC_008",
+      "DOC_004"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_007"
+    ],
+    "latency": 2.808,
+    "agent_latency": 0.06,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó không chỉ nêu rõ người giới thiệu nhận được 50.000đ vào tài khoản mà còn cung cấp thêm thông tin chi tiết về lợi ích cho bạn bè và các điều kiện sử dụng tiền thưởng. Giọng văn cũng rất chuyên nghiệp và phù hợp với vai trò hỗ trợ khách hàng.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác về phần thưởng mà người giới thiệu nhận được, nhưng có thêm thông tin về giảm giá cho bạn bè và điều kiện sử dụng tiền thưởng, điều này có thể không cần thiết cho câu hỏi. Tuy nhiên, thông tin vẫn liên quan và hữu ích."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.002005
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 198
+    }
+  },
+  {
+    "test_case": "Tôi có được miễn phí vận chuyển không nếu đơn hàng của tôi trên 500.000đ?",
+    "expected_answer": "Có, đơn hàng trên 500.000đ được miễn phí vận chuyển nội thành.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_002",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_002"
+    ],
+    "latency": 2.618,
+    "agent_latency": 0.06,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5
+    },
+    "judge": {
+      "final_score": 1.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 1
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent hoàn toàn không liên quan đến câu hỏi về miễn phí vận chuyển. Thay vào đó, Agent đã cung cấp thông tin về chính sách đổi trả, không trả lời đúng câu hỏi được đặt ra.",
+        "gpt-4o-mini": "Câu trả lời hoàn toàn không liên quan đến câu hỏi về miễn phí vận chuyển, mà chỉ đề cập đến chính sách đổi trả sản phẩm."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001662
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 165
+    }
+  },
+  {
+    "test_case": "Khi nào chương trình Flash Sale diễn ra?",
+    "expected_answer": "Chương trình Flash Sale diễn ra vào thứ 6 hàng tuần từ 12:00-14:00.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%.",
+    "retrieved_ids": [
+      "DOC_007",
+      "DOC_003",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_010"
+    ],
+    "latency": 2.421,
+    "agent_latency": 0.06,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent đúng về thời gian diễn ra chương trình Flash Sale, phù hợp với Ground Truth. Tuy nhiên, phần đầu của câu trả lời không liên quan đến câu hỏi về Flash Sale, làm giảm tính chuyên nghiệp và sự tập trung vào câu hỏi chính.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian diễn ra chương trình Flash Sale, nhưng có thêm thông tin không cần thiết về mã giảm giá cho bạn bè, điều này làm cho câu trả lời không hoàn toàn tập trung vào câu hỏi chính."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.001748
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 129
+    }
+  },
+  {
+    "test_case": "Thời gian phản hồi cho khiếu nại là bao lâu?",
+    "expected_answer": "Thời gian phản hồi ban đầu cho khiếu nại là 24 giờ làm việc.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng gửi khiếu nại qua hotline 1900-xxxx hoặc email support@company.vn. Thời gian phản hồi ban đầu là 24 giờ làm việc. Khiếu nại được phân loại: Mức 1 (đơn giản) xử lý trong 3 ngày, Mức 2 (phức tạp) xử lý trong 7 ngày, Mức 3 (nghiêm trọng) xử lý trong 14 ngày với sự tham gia của quản lý cấp cao. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa.",
+    "retrieved_ids": [
+      "DOC_005",
+      "DOC_004",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_005"
+    ],
+    "latency": 2.819,
+    "agent_latency": 0.059,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian phản hồi ban đầu là 24 giờ làm việc. Tuy nhiên, mặc dù có thông tin bổ sung về các mức độ xử lý khiếu nại, nhưng không cần thiết cho câu hỏi cụ thể. Do đó, câu trả lời thiếu một chút sự tập trung vào câu hỏi chính."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000119
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 166
+    }
+  },
+  {
+    "test_case": "Điểm thưởng có hiệu lực trong bao lâu?",
+    "expected_answer": "Điểm thưởng có hiệu lực 12 tháng kể từ ngày tích lũy.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng tích lũy điểm thưởng cho mỗi đơn hàng: 1 điểm cho mỗi 10.000đ. Hạng Bạc: 0-499 điểm (giảm 5%), Hạng Vàng: 500-1499 điểm (giảm 10%), Hạng Kim Cương: từ 1500 điểm (giảm 15% + quà sinh nhật). Điểm thưởng có hiệu lực 12 tháng kể từ ngày tích lũy. Giá sản phẩm đã bao gồm VAT 10%.",
+    "retrieved_ids": [
+      "DOC_003",
+      "DOC_010",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_003"
+    ],
+    "latency": 3.11,
+    "agent_latency": 0.059,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian hiệu lực của điểm thưởng, nhưng có thêm nhiều chi tiết không cần thiết liên quan đến cách tích lũy điểm và các hạng mức. Mặc dù thông tin bổ sung có thể hữu ích, nhưng nó không trực tiếp trả lời câu hỏi về thời gian hiệu lực."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000113
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 130
+    }
+  },
+  {
+    "test_case": "Tôi có thể tải ứng dụng ở đâu?",
+    "expected_answer": "Bạn có thể tải ứng dụng trên App Store hoặc Google Play.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Tải ứng dụng trên App Store hoặc Google Play. Ứng dụng yêu cầu iOS 14+ hoặc Android 10+. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Tiền thưởng có thể dùng cho đơn hàng tiếp theo nhưng không được rút thành tiền mặt.",
+    "retrieved_ids": [
+      "DOC_008",
+      "DOC_007",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_008"
+    ],
+    "latency": 2.609,
+    "agent_latency": 0.058,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về nơi tải ứng dụng, nhưng có thêm chi tiết không cần thiết về mã giới thiệu và tiền thưởng, làm cho câu trả lời trở nên dài dòng hơn. Tuy nhiên, thông tin chính vẫn đúng và đầy đủ."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000101
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 155
+    }
+  },
+  {
+    "test_case": "Công ty hỗ trợ vận chuyển đến bao nhiêu quốc gia?",
+    "expected_answer": "15 quốc gia trong khu vực Châu Á-Thái Bình Dương.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty hỗ trợ vận chuyển quốc tế đến 15 quốc gia trong khu vực Châu Á-Thái Bình Dương. Phí vận chuyển tính theo trọng lượng: dưới 1kg là 150.000đ, 1-5kg là 300.000đ, trên 5kg tính 50.000đ/kg. Thời gian giao hàng quốc tế 7-14 ngày làm việc. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng.",
+    "retrieved_ids": [
+      "DOC_006",
+      "DOC_002",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_006"
+    ],
+    "latency": 4.841,
+    "agent_latency": 0.058,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác về số lượng quốc gia mà công ty hỗ trợ vận chuyển, phù hợp với Ground Truth. Tuy nhiên, câu trả lời bao gồm thêm thông tin không cần thiết về phí vận chuyển, thời gian giao hàng và phương thức thanh toán, không liên quan trực tiếp đến câu hỏi. Điều này làm giảm tính liên quan của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác về số lượng quốc gia (15) và khu vực (Châu Á-Thái Bình Dương), nhưng có thêm thông tin không cần thiết về phí vận chuyển và phương thức thanh toán, làm cho câu trả lời không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002083
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 189
+    }
+  },
+  {
+    "test_case": "Nếu tôi đổi trả sản phẩm, ai sẽ chịu phí vận chuyển?",
+    "expected_answer": "Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_004",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_001"
+    ],
+    "latency": 2.668,
+    "agent_latency": 0.058,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent hoàn toàn chính xác và đầy đủ, bao gồm thông tin về phí vận chuyển và các điều kiện đổi trả sản phẩm, phù hợp với câu hỏi được đặt ra."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 9e-05
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 165
+    }
+  },
+  {
+    "test_case": "Tại sao công ty lại mã hóa dữ liệu cá nhân?",
+    "expected_answer": "Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA. Dữ liệu được mã hóa AES-256. Khách hàng có quyền yêu cầu xóa dữ liệu trong vòng 30 ngày. Dữ liệu không được chia sẻ cho bên thứ 3 mà không có sự đồng ý.",
+    "retrieved_ids": [
+      "DOC_009",
+      "DOC_001",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_009"
+    ],
+    "latency": 2.312,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent đúng với Ground Truth về cam kết bảo vệ dữ liệu cá nhân theo PDPA và cung cấp thêm thông tin về việc mã hóa dữ liệu bằng AES-256, điều này làm tăng tính đầy đủ của câu trả lời. Tuy nhiên, thông tin về quyền yêu cầu xóa dữ liệu và việc không chia sẻ dữ liệu cho bên thứ 3 không trực tiếp trả lời câu hỏi tại sao công ty mã hóa dữ liệu cá nhân, mặc dù chúng có liên quan đến bảo vệ dữ liệu. Do đó, câu trả lời thiếu một chút tập trung vào lý do cụ thể của việc mã hóa.",
+        "gpt-4o-mini": "Câu trả lời đúng hầu hết các điểm chính liên quan đến việc mã hóa dữ liệu cá nhân, đặc biệt là cam kết bảo vệ theo PDPA. Tuy nhiên, thông tin về mã hóa AES-256, quyền yêu cầu xóa dữ liệu và việc không chia sẻ cho bên thứ 3 không phải là lý do chính cho việc mã hóa dữ liệu, do đó thiếu một số chi tiết quan trọng liên quan đến lý do cụ thể."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002459
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "reasoning",
+      "tokens_used": 188
+    }
+  },
+  {
+    "test_case": "Mã giới thiệu là gì và ai có thể sử dụng nó?",
+    "expected_answer": "Mã giới thiệu là mã riêng của mỗi khách hàng, và bạn bè của họ có thể sử dụng mã này để mua hàng lần đầu.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Mỗi khách hàng có mã giới thiệu riêng. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Không giới hạn số lần giới thiệu. Tiền thưởng có thể dùng cho đơn hàng tiếp theo nhưng không được rút thành tiền mặt.",
+    "retrieved_ids": [
+      "DOC_007",
+      "DOC_008",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_007"
+    ],
+    "latency": 1.802,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent chính xác và đầy đủ hơn Ground Truth, cung cấp thông tin chi tiết về lợi ích của việc sử dụng mã giới thiệu và các điều kiện kèm theo. Tuy nhiên, câu trả lời có thể được coi là hơi thừa thông tin so với yêu cầu của câu hỏi, vì câu hỏi chỉ yêu cầu định nghĩa mã giới thiệu và ai có thể sử dụng nó. Do đó, điểm số là 4.",
+        "gpt-4o-mini": "Câu trả lời của Agent đúng hầu hết các điểm chính về mã giới thiệu, bao gồm cách thức hoạt động và lợi ích cho cả người giới thiệu và người được giới thiệu. Tuy nhiên, nó có một số chi tiết bổ sung không cần thiết (như số tiền thưởng và quy định về việc sử dụng tiền thưởng) mà không được đề cập trong Ground Truth."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002171
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 191
+    }
+  },
+  {
+    "test_case": "Nếu tôi mua một sản phẩm giảm giá 70% và trả lại trong vòng 30 ngày, tôi có thể được hoàn tiền không? Ngoài ra, hãy cho tôi biết phí vận chuyển trả hàng sẽ được tính như thế nào nếu sản phẩm đến trễ.",
+    "expected_answer": "Không, sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_004",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [],
+    "latency": 2.407,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.25,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn chính xác và đầy đủ so với Ground Truth. Agent đã nêu rõ rằng sản phẩm giảm giá trên 50% không được đổi trả và phí vận chuyển do khách hàng chịu, trừ khi có lỗi từ nhà sản xuất. Câu trả lời cũng được trình bày một cách chuyên nghiệp và liên quan trực tiếp đến câu hỏi của người dùng.",
+        "gpt-4o-mini": "Câu trả lời có thông tin đúng về chính sách đổi trả và phí vận chuyển, nhưng không chính xác hoàn toàn vì không đề cập rõ ràng rằng sản phẩm giảm giá 70% không được hoàn tiền. Thông tin về phí vận chuyển cũng không đầy đủ khi không đề cập đến trường hợp sản phẩm đến trễ."
+      },
+      "conflict_resolution": "median_due_to_high_spread",
+      "score_spread": 3,
+      "cost": 0.002137
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "extreme_trick",
+      "tokens_used": 145
+    }
+  },
+  {
+    "test_case": "Thời gian giao hàng cho đơn hàng ngoại thành lâu hơn nội thành như thế nào?",
+    "expected_answer": "Thời gian giao hàng ngoại thành là 3-5 ngày, lâu hơn nội thành.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Để đặt hàng, khách hàng truy cập website, chọn sản phẩm và thêm vào giỏ hàng. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng. Đơn hàng trên 500.000đ được miễn phí vận chuyển nội thành. Thời gian giao hàng nội thành 1-2 ngày, ngoại thành 3-5 ngày.",
+    "retrieved_ids": [
+      "DOC_002",
+      "DOC_001",
+      "DOC_003"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_002"
+    ],
+    "latency": 2.272,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent cung cấp thông tin chính xác về thời gian giao hàng ngoại thành (3-5 ngày) so với nội thành (1-2 ngày), phù hợp với Ground Truth. Tuy nhiên, phần đầu của câu trả lời chứa thông tin không liên quan đến câu hỏi về thời gian giao hàng, làm giảm tính liên quan và chuyên nghiệp của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời cung cấp thông tin chính xác về thời gian giao hàng cho cả nội thành và ngoại thành, nhưng có một số chi tiết không liên quan đến câu hỏi chính, như quy trình đặt hàng và phương thức thanh toán."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.00203
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "comparison",
+      "tokens_used": 194
+    }
+  },
+  {
+    "test_case": "Nếu khiếu nại của tôi là phức tạp, mất bao lâu để được giải quyết?",
+    "expected_answer": "Khiếu nại mức 2 (phức tạp) sẽ được xử lý trong 7 ngày.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng gửi khiếu nại qua hotline 1900-xxxx hoặc email support@company.vn. Khiếu nại được phân loại: Mức 1 (đơn giản) xử lý trong 3 ngày, Mức 2 (phức tạp) xử lý trong 7 ngày, Mức 3 (nghiêm trọng) xử lý trong 14 ngày với sự tham gia của quản lý cấp cao. Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Nếu không sửa được, khách hàng được đổi sản phẩm mới cùng loại.",
+    "retrieved_ids": [
+      "DOC_005",
+      "DOC_004",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_005"
+    ],
+    "latency": 1.739,
+    "agent_latency": 0.065,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent chính xác về thời gian xử lý khiếu nại phức tạp (7 ngày) và cung cấp thêm thông tin về các mức độ khác của khiếu nại. Tuy nhiên, thông tin về bảo hành sản phẩm điện tử không liên quan trực tiếp đến câu hỏi, làm giảm tính liên quan của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời cung cấp thông tin chính xác về thời gian xử lý khiếu nại phức tạp (7 ngày), nhưng có thêm thông tin không cần thiết về các mức khiếu nại khác và chính sách bảo hành, làm cho câu trả lời hơi dài dòng và không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002095
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 192
+    }
+  },
+  {
+    "test_case": "Bạn bè của tôi có được giảm giá khi sử dụng mã giới thiệu không?",
+    "expected_answer": "Có, bạn bè được giảm 10% cho đơn hàng đầu tiên khi sử dụng mã giới thiệu.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Mỗi khách hàng có mã giới thiệu riêng. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên. Không giới hạn số lần giới thiệu. Tiền thưởng có thể dùng cho đơn hàng tiếp theo nhưng không được rút thành tiền mặt.",
+    "retrieved_ids": [
+      "DOC_007",
+      "DOC_008",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_007"
+    ],
+    "latency": 4.217,
+    "agent_latency": 0.058,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent chính xác và đầy đủ so với Ground Truth. Nó không chỉ xác nhận rằng bạn bè được giảm 10% cho đơn hàng đầu tiên khi sử dụng mã giới thiệu, mà còn cung cấp thêm thông tin hữu ích về lợi ích cho người giới thiệu và các điều kiện liên quan. Giọng văn cũng phù hợp với vai trò hỗ trợ khách hàng.",
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, cung cấp thông tin về việc bạn bè được giảm giá 10% khi sử dụng mã giới thiệu, đồng thời cũng nêu rõ các điều kiện liên quan đến mã giới thiệu và tiền thưởng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.002002
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 123
+    }
+  },
+  {
+    "test_case": "Giá sản phẩm đã bao gồm thuế VAT không?",
+    "expected_answer": "Có, giá sản phẩm đã bao gồm VAT 10%.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_004",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_010"
+    ],
+    "latency": 2.196,
+    "agent_latency": 0.058,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, xác nhận rằng giá sản phẩm đã bao gồm VAT 10%. Ngoài ra, thông tin bổ sung về chương trình Flash Sale và chính sách giảm giá cũng liên quan và hữu ích, mặc dù không phải là phần chính của câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.0001
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 170
+    }
+  },
+  {
+    "test_case": "Tôi cần mang theo gì khi đến trung tâm bảo hành?",
+    "expected_answer": "Bạn cần mang theo sản phẩm và phiếu bảo hành gốc.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa. Khách hàng mang sản phẩm đến trung tâm bảo hành kèm phiếu bảo hành gốc. Công ty cam kết bảo vệ dữ liệu cá nhân theo PDPA.",
+    "retrieved_ids": [
+      "DOC_004",
+      "DOC_009",
+      "DOC_006"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_004"
+    ],
+    "latency": 3.588,
+    "agent_latency": 0.057,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o": 4,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent đúng và liên quan đến câu hỏi, bao gồm thông tin cần mang theo sản phẩm và phiếu bảo hành gốc. Tuy nhiên, có thêm thông tin không cần thiết về điều kiện bảo hành và cam kết bảo vệ dữ liệu cá nhân, làm cho câu trả lời không hoàn toàn tập trung vào câu hỏi.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về việc cần mang theo sản phẩm và phiếu bảo hành gốc, nhưng có thêm một số thông tin không cần thiết và không trực tiếp liên quan đến câu hỏi, như thông tin về thời gian bảo hành và điều kiện bảo hành."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.0019
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "procedural",
+      "tokens_used": 145
+    }
+  },
+  {
+    "test_case": "Tôi cần phải đăng ký bằng cách nào?",
+    "expected_answer": "Bạn có thể đăng ký bằng số điện thoại hoặc email.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Đăng ký bằng số điện thoại hoặc email. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_008",
+      "DOC_001",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_008"
+    ],
+    "latency": 3.357,
+    "agent_latency": 0.057,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4,
+      "agreement_rate": 0.5,
+      "individual_scores": {
+        "gpt-4o": 2,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent có đề cập đến cách đăng ký bằng số điện thoại hoặc email, nhưng thêm thông tin không liên quan về sản phẩm và giá cả, làm giảm tính chính xác và liên quan của câu trả lời. Câu trả lời không tập trung vào câu hỏi được đặt ra.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về cách đăng ký, nhưng có thêm một số chi tiết không cần thiết về sản phẩm và giá cả, không liên quan trực tiếp đến câu hỏi."
+      },
+      "conflict_resolution": "median_due_to_high_spread",
+      "score_spread": 2,
+      "cost": 0.001685
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "procedural",
+      "tokens_used": 128
+    }
+  },
+  {
+    "test_case": "Nếu tôi có 600 điểm, tôi có được giảm giá 15% không?",
+    "expected_answer": "Không, bạn chỉ được giảm giá 10%.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_001",
+      "DOC_004"
+    ],
+    "expected_retrieval_ids": [],
+    "latency": 4.83,
+    "agent_latency": 0.057,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của Agent hoàn toàn không liên quan đến câu hỏi được đặt ra. Nó không đề cập đến việc giảm giá dựa trên điểm số và không trả lời đúng câu hỏi về việc giảm giá 15% với 600 điểm. Thông tin cung cấp không chính xác và không đầy đủ so với Ground Truth.",
+        "gpt-4o-mini": "Câu trả lời của Agent có một số thông tin đúng liên quan đến chương trình giảm giá, nhưng không trả lời trực tiếp câu hỏi về việc có được giảm giá 15% hay không. Thông tin về giảm giá 10% là cần thiết nhưng không được đề cập."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001834
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "conflicting",
+      "tokens_used": 181
+    }
+  },
+  {
+    "test_case": "Tôi có thể đổi trả sản phẩm sau bao lâu kể từ ngày mua?",
+    "expected_answer": "Bạn có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_004",
+      "DOC_010"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_001"
+    ],
+    "latency": 1.705,
+    "agent_latency": 0.051,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent chính xác và đầy đủ, bao gồm thông tin về thời gian đổi trả, điều kiện sản phẩm và phí vận chuyển, phù hợp với câu hỏi được đặt ra."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 9e-05
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 167
+    }
+  },
+  {
+    "test_case": "Tôi có thể đổi trả sản phẩm sau 30 ngày nếu tôi đã sử dụng nó một lần không?",
+    "expected_answer": "Không, sản phẩm phải còn nguyên tem mác và hóa đơn gốc.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua. Sản phẩm phải còn nguyên tem mác và hóa đơn gốc. Sản phẩm giảm giá trên 50% không được đổi trả. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất.",
+    "retrieved_ids": [
+      "DOC_001",
+      "DOC_004",
+      "DOC_008"
+    ],
+    "expected_retrieval_ids": [],
+    "latency": 1.773,
+    "agent_latency": 0.052,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 3
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent đúng một phần khi đề cập đến chính sách đổi trả trong vòng 30 ngày, nhưng không nêu rõ rằng sản phẩm phải còn nguyên tem mác và hóa đơn gốc, điều này là thông tin quan trọng để trả lời câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.0001
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "ambiguous",
+      "tokens_used": 124
+    }
+  },
+  {
+    "test_case": "Nếu tôi đặt hàng hôm nay với giá là 100.000 VNĐ, nhưng giá sản phẩm tăng vào ngày mai, giá của tôi vẫn là bao nhiêu?",
+    "expected_answer": "Giá của bạn vẫn là 100.000 VNĐ, vì áp dụng giá tại thời điểm đặt hàng.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Giá sản phẩm đã bao gồm VAT 10%. Chương trình Flash Sale diễn ra thứ 6 hàng tuần từ 12:00-14:00 với giảm giá lên đến 70%. Mã giảm giá không được cộng dồn. Giá sản phẩm có thể thay đổi mà không cần báo trước.",
+    "retrieved_ids": [
+      "DOC_010",
+      "DOC_002",
+      "DOC_004"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_010"
+    ],
+    "latency": 2.282,
+    "agent_latency": 0.051,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 1.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 1,
+        "gpt-4o-mini": 2
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn không liên quan đến câu hỏi. Thay vì giải thích rằng giá sẽ giữ nguyên tại thời điểm đặt hàng, AI Agent đã cung cấp thông tin không liên quan về VAT, Flash Sale và mã giảm giá. Điều này không trả lời đúng câu hỏi được đặt ra.",
+        "gpt-4o-mini": "Câu trả lời của Agent có một số thông tin đúng liên quan đến giá sản phẩm, nhưng không trả lời đúng câu hỏi về giá của đơn hàng đã đặt. Thông tin về VAT, chương trình Flash Sale và mã giảm giá không liên quan đến câu hỏi chính, dẫn đến việc thiếu sót trong việc cung cấp thông tin cần thiết."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.001889
+    },
+    "status": "fail",
+    "metadata": {
+      "difficulty": "hard",
+      "type": "procedural",
+      "tokens_used": 166
+    }
+  },
+  {
+    "test_case": "Nếu tôi gửi một bưu kiện nặng 3kg, phí vận chuyển sẽ là bao nhiêu?",
+    "expected_answer": "300.000đ.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Công ty hỗ trợ vận chuyển quốc tế đến 15 quốc gia trong khu vực Châu Á-Thái Bình Dương. Phí vận chuyển tính theo trọng lượng: dưới 1kg là 150.000đ, 1-5kg là 300.000đ, trên 5kg tính 50.000đ/kg. Phí vận chuyển đổi trả do khách hàng chịu trừ trường hợp lỗi từ nhà sản xuất. Hệ thống hỗ trợ thanh toán qua thẻ tín dụng, ví điện tử MoMo, ZaloPay và chuyển khoản ngân hàng.",
+    "retrieved_ids": [
+      "DOC_006",
+      "DOC_001",
+      "DOC_002"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_006"
+    ],
+    "latency": 3.021,
+    "agent_latency": 0.051,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn chính xác và đầy đủ. Nó cung cấp thông tin về phí vận chuyển cho bưu kiện nặng 3kg là 300.000đ, đúng với Ground Truth. Ngoài ra, câu trả lời còn cung cấp thêm thông tin liên quan đến chính sách vận chuyển và phương thức thanh toán, mặc dù không cần thiết cho câu hỏi nhưng không ảnh hưởng đến độ chính xác và tính liên quan của câu trả lời. Giọng văn cũng phù hợp với vai trò hỗ trợ khách hàng.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về phí vận chuyển cho bưu kiện nặng 3kg, nhưng không nêu rõ số tiền cụ thể là 300.000đ, mà chỉ đề cập đến các mức phí. Điều này làm cho câu trả lời thiếu một chi tiết quan trọng."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.002416
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "procedural",
+      "tokens_used": 175
+    }
+  },
+  {
+    "test_case": "Ứng dụng yêu cầu phiên bản hệ điều hành nào?",
+    "expected_answer": "Ứng dụng yêu cầu iOS 14+ hoặc Android 10+.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Tải ứng dụng trên App Store hoặc Google Play. Ứng dụng yêu cầu iOS 14+ hoặc Android 10+. Sản phẩm điện tử được bảo hành 24 tháng kể từ ngày mua. Bảo hành không áp dụng cho hư hỏng do rơi vỡ, ngấm nước hoặc tự ý sửa chữa.",
+    "retrieved_ids": [
+      "DOC_008",
+      "DOC_004",
+      "DOC_009"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_008"
+    ],
+    "latency": 2.052,
+    "agent_latency": 0.051,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về yêu cầu phiên bản hệ điều hành (iOS 14+ hoặc Android 10+), nhưng có thêm thông tin không liên quan về bảo hành sản phẩm, làm cho câu trả lời không hoàn toàn tập trung vào câu hỏi."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 0,
+      "cost": 0.000101
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "medium",
+      "type": "fact-check",
+      "tokens_used": 169
+    }
+  },
+  {
+    "test_case": "Hạng nào có mức giảm giá cao nhất trong chương trình khách hàng thân thiết?",
+    "expected_answer": "Hạng Kim Cương có mức giảm giá cao nhất là 15%.",
+    "agent_response": "Dựa trên tài liệu hệ thống: Khách hàng tích lũy điểm thưởng cho mỗi đơn hàng: 1 điểm cho mỗi 10.000đ. Hạng Bạc: 0-499 điểm (giảm 5%), Hạng Vàng: 500-1499 điểm (giảm 10%), Hạng Kim Cương: từ 1500 điểm (giảm 15% + quà sinh nhật). Mỗi khách hàng có mã giới thiệu riêng. Khi bạn bè sử dụng mã để mua hàng lần đầu, người giới thiệu nhận 50.000đ vào tài khoản và bạn bè được giảm 10% đơn hàng đầu tiên.",
+    "retrieved_ids": [
+      "DOC_003",
+      "DOC_007",
+      "DOC_001"
+    ],
+    "expected_retrieval_ids": [
+      "DOC_003"
+    ],
+    "latency": 2.107,
+    "agent_latency": 0.055,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o": 5,
+        "gpt-4o-mini": 4
+      },
+      "reasoning": {
+        "gpt-4o": "Câu trả lời của AI Agent hoàn toàn chính xác và đầy đủ. Nó đã xác định đúng hạng có mức giảm giá cao nhất là Hạng Kim Cương với 15%, phù hợp với Ground Truth. Ngoài ra, câu trả lời còn cung cấp thêm thông tin chi tiết về các hạng khác và các lợi ích bổ sung, điều này làm tăng tính đầy đủ và chuyên nghiệp của câu trả lời.",
+        "gpt-4o-mini": "Câu trả lời của Agent cung cấp thông tin chính xác về các hạng và mức giảm giá, nhưng không nêu rõ rằng Hạng Kim Cương là hạng có mức giảm giá cao nhất, mà chỉ liệt kê các hạng và mức giảm mà không nhấn mạnh điểm này."
+      },
+      "conflict_resolution": "average",
+      "score_spread": 1,
+      "cost": 0.002214
+    },
+    "status": "pass",
+    "metadata": {
+      "difficulty": "easy",
+      "type": "fact-check",
+      "tokens_used": 196
+    }
+  }
+]

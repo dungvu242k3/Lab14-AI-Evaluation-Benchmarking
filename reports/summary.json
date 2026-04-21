@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "version": "Agent_V2_Optimized",
+    "total": 56,
+    "pass": 43,
+    "fail": 13,
+    "errors": 0,
+    "timestamp": "2026-04-21 15:15:52",
+    "elapsed_seconds": 39.4
+  },
+  "metrics": {
+    "avg_score": 3.58,
+    "hit_rate": 0.982,
+    "mrr": 0.908,
+    "agreement_rate": 0.92,
+    "avg_latency_seconds": 2.664
+  },
+  "cost": {
+    "total_judge_cost_usd": 0.0824,
+    "total_tokens": 46521,
+    "total_tokens_input": 38965,
+    "total_tokens_output": 7556,
+    "agent_tokens_used": 8835,
+    "models_used": [
+      "gpt-4o",
+      "gpt-4o-mini"
+    ]
+  },
+  "difficulty_breakdown": {
+    "easy": {
+      "count": 25,
+      "avg_score": 3.84
+    },
+    "medium": {
+      "count": 19,
+      "avg_score": 3.66
+    },
+    "hard": {
+      "count": 12,
+      "avg_score": 2.92
+    }
+  },
+  "regression": {
+    "decision": "APPROVE_RELEASE",
+    "checks": {
+      "score_improved": true,
+      "meets_min_score": true,
+      "hit_rate_stable": true,
+      "cost_acceptable": true
+    },
+    "deltas": {
+      "score": 0.437,
+      "hit_rate": 0.0,
+      "mrr": 0.0,
+      "cost_change_pct": -18.3
+    },
+    "v1_metrics": {
+      "avg_score": 3.143,
+      "hit_rate": 0.982,
+      "mrr": 0.908,
+      "agreement_rate": 0.884,
+      "avg_latency_seconds": 2.078
+    },
+    "v2_metrics": {
+      "avg_score": 3.58,
+      "hit_rate": 0.982,
+      "mrr": 0.908,
+      "agreement_rate": 0.92,
+      "avg_latency_seconds": 2.664
+    }
+  },
+  "v1_summary": {
+    "metadata": {
+      "version": "Agent_V1_Base",
+      "total": 56,
+      "pass": 36,
+      "fail": 20,
+      "errors": 0,
+      "timestamp": "2026-04-21 15:15:12",
+      "elapsed_seconds": 31.2
+    },
+    "metrics": {
+      "avg_score": 3.143,
+      "hit_rate": 0.982,
+      "mrr": 0.908,
+      "agreement_rate": 0.884,
+      "avg_latency_seconds": 2.078
+    },
+    "cost": {
+      "total_judge_cost_usd": 0.1009,
+      "total_tokens": 49531,
+      "total_tokens_input": 41332,
+      "total_tokens_output": 8199,
+      "agent_tokens_used": 10934,
+      "models_used": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ]
+    },
+    "difficulty_breakdown": {
+      "easy": {
+        "count": 25,
+        "avg_score": 3.56
+      },
+      "medium": {
+        "count": 19,
+        "avg_score": 3.11
+      },
+      "hard": {
+        "count": 12,
+        "avg_score": 2.33
+      }
+    }
+  }
+}
