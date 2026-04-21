@@ -12,10 +12,6 @@
 - **`engine/llm_judge.py`**: Kiến trúc hệ thống Multi-Judge Consensus Engine. Triển khai việc gọi song song nhiều mô hình (GPT-4o, Claude 3.5 Sonnet) để chấm điểm câu trả lời của Agent.
 - **Agreement Logic**: Xây dựng logic tính toán độ đồng thuận và tự động xử lý xung đột điểm số khi các Judge không thống nhất.
 
-### Git Commits tiêu biểu:
-- `feat: multi-judge consensus with GPT and Claude integration`
-- `feat: implement agreement rate and score calibration logic`
-
 ---
 
 ## 2. Kiến thức chuyên sâu (Technical Depth)
