@@ -7,7 +7,7 @@
 - **`check_lab.py` & Validation logic**: Xây dựng hệ thống tự động kiểm tra định dạng dữ liệu (Sanity Check) và logic **Regression Release Gate** để so sánh V1 vs V2.
 
 ### Git Commits tiêu biểu:
-- `feat: implement automated regression gate and sanity checker`
+- `feat: implement automated regression gate and sanity checker by Vu Tien Thanh`
 
 ---
 
