@@ -1,6 +1,8 @@
 # Báo cáo Cá nhân — Phan Thị Mai Phương
 **Họ và tên:** Phan Thị Mai Phương
+
 **Mã học viên:** 2A202600281
+
 **Nhóm:** C401-C1
 
 ## 1. Đóng góp kỹ thuật (Engineering Contribution)
